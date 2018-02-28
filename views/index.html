@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to a CRUDy Blog API!</title>
+    <meta name="description" content="Blog posts">
+    <link id="favicon" rel="icon" href="https://hyperdev.com/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Rando Blogsman's Blog</h1>
+      </header>
+      <main>
+        <section>
+          <h2>Blog Posts</h2>
+          <form id="js-blog-post-form">
+            <label for="blog-post-title-entry">Add a title: </label>
+            <input type="text" name="blog-post-title-entry" id="js-blog-post-title" placeholder="Title goes here."><br />
+            <label for="blog-post-author-entry">Add an author name: </label>
+            <input type="text" name="blog-post-author-entry" id="js-blog-post-author" placeholder="Author goes here."><br />
+            <label for="blog-post-content-entry">Add blog content: </label>
+            <input type="text" name="blog-post-content-entry" id="js-blog-post-content" placeholder="Blog content goes here."><br />
+            <button type="submit">Add blog post</button>
+          </form>
+
+          <ul class="blogPosts js-blogPosts">
+          </ul>
+        </section>
+      </main>
+    </div>
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+    <script src="/client.js"></script>
+  </body>
+</html>
