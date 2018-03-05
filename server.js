@@ -15,6 +15,7 @@ const { PORT, DATABASE_URL } = require('./config');
 const { BlogPost } = require('./models');
 
 const app = express();
+
 app.use(bodyParser.json());
 
 const blogPostsRouter = require('./blogPostsRouter');
@@ -42,7 +43,6 @@ let server;
 
 // this function connects to our database, then starts the server
 function runServer(databaseUrl, port = PORT) {
-
   return new Promise((resolve, reject) => {
     mongoose.connect(databaseUrl, err => {
       if (err) {
