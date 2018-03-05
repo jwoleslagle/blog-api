@@ -7,4 +7,4 @@
     + allows users to add, edit, and delete blog posts
 * Uses `express.Router` to route requests for `/blog-posts` to a separate module.
 * CRUD (create, read, update, delete) operations for blog posts
-* Note: uses volatile, in memory storage, since we haven't studied data persistence yet in the course.
+* Note: demo using mongo DB available at https://shrouded-tor-35317.herokuapp.com/posts
